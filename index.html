@@ -40,8 +40,14 @@
       <p class="errcode">ERR_CONNECTION_RESET</p>
     </div>
 
-    <div class="home-link error">
-  <button id="homeBtn">Home</button>
+    <div class="hidden" id="errorScreen">
+  <h3>500 Internal Server Error</h3>
+  <p>Something went wrong. Please try again later.</p>
+  <p class="errcode">ERR_CONNECTION_RESET</p>
+
+  <div class="home-link">
+    <a href="#" onclick="location.reload()">Home</a>
+  </div>
     </div>
 
   <div class="footer">
