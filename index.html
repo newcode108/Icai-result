@@ -2,26 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ICAI Exam Result</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CA Inter (Old) Result – ICAI</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>ICAI Exam Result Portal</h1>
+  <div class="header-bar">
+    <img src="https://icai.nic.in/icai_logo_large.png" alt="ICAI logo" class="logo">
+    <div class="header-title">The Institute of Chartered Accountants of India</div>
+  </div>
+  <div class="banner">ICAI CA Inter Result (Old Course)</div>
+  <div class="form-container">
     <form id="resultForm">
-      <label>Roll Number:<input type="text" required /></label>
-      <label>PIN / Reg. Number:<input type="text" required /></label>
-      <label>Captcha:
-        <span id="captcha">7X9P1</span>
-        <input type="text" required />
-      </label>
+      <div class="form-row">
+        <label>Roll Number</label>
+        <input type="text" required>
+      </div>
+      <div class="form-row">
+        <label>Registration/Pin No.</label>
+        <input type="text" required>
+      </div>
+      <div class="form-row captcha-row">
+        <label>Captcha</label>
+        <div class="captcha-box">7X9P1</div>
+        <input type="text" required>
+      </div>
       <button type="submit">Submit</button>
     </form>
     <div id="errorScreen" class="hidden">
       <h2>500 Internal Server Error</h2>
-      <p>Application crashed unexpectedly.</p>
-      <p>ERR_CONNECTION_RESET</p>
+      <p>Sorry, something went wrong. Please try again later.</p>
+      <p class="error-code">ERR_CONNECTION_RESET</p>
     </div>
   </div>
   <script src="script.js"></script>
