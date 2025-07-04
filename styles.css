@@ -125,3 +125,19 @@ button:hover {
 .errcode {
   font-family: monospace;
 }
+.home-link.error {
+  margin-top: 15px;
+}
+
+#homeBtn {
+  background-color: #0000cc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#homeBtn:hover {
+  background-color: #000099;
+}
