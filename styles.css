@@ -96,9 +96,16 @@ button.submit {
 button:hover {
   opacity: 0.9;
 }
+.home-link {
+  margin-top: 15px;
+  text-align: center;
+}
 
-
-
+.home-link a {
+  color: #0000cc;
+  font-size: 14px;
+  text-decoration: underline;
+}
 .footer {
   margin-top: 30px;
   background: #800080;
