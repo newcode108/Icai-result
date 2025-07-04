@@ -3,38 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CA Inter (Old) Result – ICAI</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Intermediate Examination Results – May 2025</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="header-bar">
-    <img src="https://icai.nic.in/icai_logo_large.png" alt="ICAI logo" class="logo">
-    <div class="header-title">The Institute of Chartered Accountants of India</div>
-  </div>
-  <div class="banner">ICAI CA Inter Result (Old Course)</div>
-  <div class="form-container">
-    <form id="resultForm">
-      <div class="form-row">
-        <label>Roll Number</label>
-        <input type="text" required>
-      </div>
-      <div class="form-row">
-        <label>Registration/Pin No.</label>
-        <input type="text" required>
-      </div>
-      <div class="form-row captcha-row">
-        <label>Captcha</label>
-        <div class="captcha-box">7X9P1</div>
-        <input type="text" required>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-    <div id="errorScreen" class="hidden">
-      <h2>500 Internal Server Error</h2>
-      <p>Sorry, something went wrong. Please try again later.</p>
-      <p class="error-code">ERR_CONNECTION_RESET</p>
+  <div class="header">
+    <img src="icai-logo.png" class="logo" alt="ICAI Logo" />
+    <div class="header-text">
+      <strong>The Institute of Chartered Accountants of India</strong><br />
+      Examination Results, May 2025
     </div>
   </div>
+
+  <div class="container">
+    <h2>Intermediate Examination Results</h2>
+    <p class="instruction">Enter your 6 Digit Roll Number and Registration No. to check your results</p>
+
+    <form id="resultForm">
+      <label>Roll No.<br /><input type="text" required /></label>
+      <label>Registration No.<br /><input type="text" required /></label>
+      <label>Enter the text as shown in the below box<br />
+        <div class="captcha-box">bfbh6w</div>
+        <input type="text" required />
+      </label>
+      <div class="note">(For preventing automated submissions)</div>
+
+      <div class="button-row">
+        <button type="reset" class="clear">CLEAR</button>
+        <button type="submit" class="submit">SUBMIT</button>
+      </div>
+    </form>
+
+    <div class="hidden" id="errorScreen">
+      <h3>500 Internal Server Error</h3>
+      <p>Something went wrong. Please try again later.</p>
+      <p class="errcode">ERR_CONNECTION_RESET</p>
+    </div>
+
+    <div class="home-link"><a href="#">Home</a></div>
+  </div>
+
+  <div class="footer">
+    <strong>Hosted by National Informatics Centre</strong>
+    <p>
+      Disclaimer: The result given is correct at the time of release...<br />
+      (copy-paste full disclaimer here if needed)
+    </p>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
