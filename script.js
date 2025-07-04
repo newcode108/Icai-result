@@ -22,7 +22,3 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
   }, 1000);
 });
 
-// Home button to reload page
-document.getElementById("homeBtn").addEventListener("click", () => {
-  window.location.reload();
-});
