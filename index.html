@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICAI Exam Result</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ICAI Exam Result Portal</h1>
+    <form id="resultForm">
+      <label>Roll Number:<input type="text" required /></label>
+      <label>PIN / Reg. Number:<input type="text" required /></label>
+      <label>Captcha:
+        <span id="captcha">7X9P1</span>
+        <input type="text" required />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="errorScreen" class="hidden">
+      <h2>500 Internal Server Error</h2>
+      <p>Application crashed unexpectedly.</p>
+      <p>ERR_CONNECTION_RESET</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
